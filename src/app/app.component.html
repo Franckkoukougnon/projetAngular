@@ -4,8 +4,9 @@
       <h2>Mes appareils</h2>
       <p class="text-center"> Mis a jour le : {{lastDate |date :'EEEE-d-MMMM-y'}}</p>
       <ul class="list-group">
-        <app-appareil *ngFor="let appareil of appareils" [appareilName]="appareil.name"
-          [appareilStatus]="appareil.status"></app-appareil>
+        <app-appareil *ngFor="let appareil of appareils; let i = index" [indexAppareil]="i"
+          [appareilName]="appareil.name" [appareilStatus]="appareil.status">
+        </app-appareil>
 
       </ul>
       <button class="btn btn-success" (click)="onAllume()">Tout allumer</button>
