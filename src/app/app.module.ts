@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { AppareilService } from './services/appareil.service';
 import { AuthComponent } from './auth/auth.component';
 import { AppareilViewComponent } from './appareil-view/appareil-view.component';
+import { AuthService } from './services/auth.service';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AppareilViewComponent } from './appareil-view/appareil-view.component';
     FormsModule
   ],
   providers: [
-    AppareilService
+    AppareilService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
