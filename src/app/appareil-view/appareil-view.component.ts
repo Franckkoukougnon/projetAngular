@@ -21,7 +21,7 @@ export class AppareilViewComponent implements OnInit {
     setTimeout(
       () => {
         this.isAuth = true;
-      }, 4000
+      }, 2000
     );
   }
 
